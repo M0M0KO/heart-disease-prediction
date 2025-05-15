@@ -7,7 +7,6 @@ A comprehensive machine learning system to predict the likelihood of heart disea
 - Deep learning model implementation using TensorFlow 2.11.0
 - Multiple traditional machine learning models for comparison
 - Data preprocessing pipeline for categorical and numerical features
-- Multi-task learning approach with dual output heads
 - Binary classification for heart disease prediction
 - High accuracy prediction results
 - Comprehensive data visualization capabilities
@@ -118,10 +117,8 @@ The project uses the Heart Disease Health Indicators Dataset from the CDC's BRFS
 The TensorFlow implementation includes:
 - Input layer for multiple health indicators
 - Dense hidden layers with ReLU activation
-- Dual output heads:
-  - Binary classification with softmax activation
-  - Continuous prediction with linear activation
-- Custom loss function combining categorical crossentropy and MSE
+- Output layer with sigmoid activation for binary classification
+- Binary crossentropy loss function
 - Adam optimizer with learning rate 1e-3
 
 ### Traditional Models
